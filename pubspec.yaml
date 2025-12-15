@@ -1,0 +1,70 @@
+name: can2025app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+
+# Dependencies specify other packages that your package needs in order to work.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  cupertino_icons: ^1.0.8
+
+  # POUR LES ANIMATIONS "WOW"
+  flutter_animate: ^4.5.0
+
+  # POUR LES LIENS (APPELS, CARTES)
+  url_launcher: ^6.2.5
+
+  # POUR LES REQUÊTES API (INTERNET)
+  http: ^1.1.0
+  
+  # ✅ POUR CHOISIR DES IMAGES DE LA GALERIE
+  image_picker: ^1.0.4
+  shared_preferences: ^2.5.3
+  flutter_svg: ^2.2.3
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices.
+  flutter_lints: ^6.0.0
+  
+  # ✅ OUTIL POUR CHANGER L'ICÔNE DE L'APP
+  flutter_launcher_icons: ^0.13.1
+
+# ✅ CONFIGURATION DE L'ICÔNE
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/can.png" # Assure-toi que cette image existe !
+  min_sdk_android: 21
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application.
+  uses-material-design: true
+
+  # CONFIGURATION DES ASSETS (IMAGES)
+  assets:
+    - assets/images/
+    - assets/flags/
+    - assets/stadiums/
+    - assets/cities/
+    - assets/places/
